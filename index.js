@@ -2,10 +2,10 @@ import express  from "express";
 import bodyParser from "body-parser";
 import connectToMongo from "./db.js";
 import cors from "cors";
+import userRoutes from "./routes/user.js";
 
 connectToMongo();
 
-import userRoutes from "./routes/user.js";
 
 const app = express();
 app.use(cors());
